@@ -1,0 +1,13 @@
+import sys
+
+year = int(input())
+
+result = not bool(year%4)
+answer = not bool(year%100)
+final = not bool(year%400)
+
+End = not (answer and not final)
+Leap = End and result
+
+print(Leap)
+
